@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nikita Vasilev](https://up.htmlacademy.ru/htmlcss/38/user/2421731).
-* Наставник: [Ирина Малиновская].
+* Наставник: [Irina Malinovskaya] (https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
