@@ -43,19 +43,20 @@
     <main class="main-inner">
       <header class="header-inner">
         <h1 class="header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrubs">
-          <li class="breadcrubs-item">
+        <ul class="breadscrubs">
+          <li class="breadscrubs-item">
             <a href="index.html">
               <span class="visually-hidden">Главная</span></a
             >
           </li>
-          <li class="breadcrubs-item">
-            <a class="breadcrubs-item">Гостиницы</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item">Гостиницы</a>
           </li>
         </ul>
       </header>
 
       <section class="catalog">
+        <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter">
           <legend class="catalog-filter-title">Инфраструктура</legend>
           <ul class="catalog-filter-list">
@@ -100,26 +101,17 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input
-                  class="control-input"
-                  type="radio"
-                  value="hotel"
-                  checked
-                />Гостиница
+                <input class="control_input" type="radio" name="house" value="Гостиница" checked> Гостиница
               </label>
             </li>
-          </ul>
-          <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" value="motel" />Мотель
+                <input class="control-input" type="radio" name="house" value="Мотель">Мотель
               </label>
             </li>
-          </ul>
-          <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" value="apartments">Апартаменты
+                <input class="control-input" type="radio" name="house" value="Апартаменты">Апартаменты
               </label>
             </li>
           </ul>
@@ -132,6 +124,7 @@
         </fieldset>
         <button class="button" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
+      </form>
       </section>
 
       <section class="found">
