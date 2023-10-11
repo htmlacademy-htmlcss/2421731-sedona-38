@@ -20,8 +20,8 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-family: "PT Sans";
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .page-header {
@@ -40,13 +40,14 @@ body {
 
 .hero {
   text-align: center;
+  background-image: url("../images/hero.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .main-page {
   background-color: #ffffff;
-  background-image: url("../images/hero.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+
 }
 
 .pluses {
@@ -54,6 +55,19 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+}
+
+.search-hotel{
+  text-align: center;
 }
 
 .search-button {
@@ -67,6 +81,7 @@ body {
 
 .advantages-item {
   background-color: #83b3d3;
+  text-align: center;
 }
 
 .advantages-title {
@@ -80,6 +95,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+}
+
+.services{
+  text-align: center;
 }
 
 .services-title {
