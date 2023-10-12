@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Каталог</title>
     <link rel="stylesheet" href="catalog.html" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -37,12 +37,13 @@
             >
           </li>
           <li class="navigation-item">
-            <a class="button-push" href="#">Хочу сюда!</a>
+            <a class="navigation-link button-push" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
+    <div class="background_image">
     <main class="main-inner">
       <header class="header-inner">
         <h1 class="header-title">Гостиницы Седоны</h1>
@@ -105,7 +106,7 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control_input" type="radio" name="house" value="Гостиница" checked> Гостиница
+                <input class="control_input" type="radio" name="house" value="Гостиница" checked>Гостиница
               </label>
             </li>
             <li class="catalog-filter-item">
@@ -122,13 +123,14 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title"></legend>
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <label>от <input type="text" value="0" /></label>
           <label>до <input type="text" value="9000" /></label>
         </fieldset>
         <button class="button" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
       </form>
+    </div>
       </section>
 
       <section class="found">
@@ -152,9 +154,9 @@
           <li class="catalog-item">
             <a class="card-link" href="#">
               <img class="card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Небо через скалы" />
+              <h3 class="card-title">Amara Resort & Spa</h3>
             </a>
-            <h3 class="card-title">Amara Resort & Spa</h3>
-            <span class="card-name">Гостиница </span>
+            <span class="card-name">Гостиница</span>
             <span class="card-price">От 4000 ₽ </span>
             <a class="button" href="#">Подробнее</a>
             <button class="button" type="submit">В избранное</button>
@@ -164,9 +166,9 @@
           <li class="catalog-item">
             <a class="card-link" href="#">
               <img class="card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Небо c радугой" />
+              <h3 class="card-title">Villas at Poco Diablo</h3>
             </a>
-            <h3 class="card-title">Villas at Poco Diablo</h3>
-            <span class="card-name">Гостиница </span>
+            <span class="card-name">Гостиница</span>
             <span class="card-price">От 5000 ₽ </span>
             <a class="button" href="#">Подробнее</a>
             <button class="button" type="submit">В избранное</button>
@@ -176,9 +178,9 @@
           <li class="catalog-item">
             <a class="card-link" href="#">
               <img class="card-image" src="images/hotel-3.jpg" width="300" height="212" alt="скалы день" />
+              <h3 class="card-title">Desert Quail Inn</h3>
             </a>
-            <h3 class="card-title">Desert Quail Inn</h3>
-            <span class="card-name">Гостиница </span>
+            <span class="card-name">Гостиница</span>
             <span class="card-price">От 2500 ₽ </span>
             <a class="button" href="#">Подробнее</a>
             <button class="button" type="submit">В избранное</button>
@@ -188,9 +190,9 @@
           <li class="catalog-item">
             <a class="card-link" href="#">
               <img class="card-image" src="images/hotel-4.jpg" width="300" height="212" alt="скалы ночь" />
+              <h3 class="card-title">GreenTree Inn</h3>
             </a>
-            <h3 class="card-title">GreenTree Inn</h3>
-            <span class="card-name">Гостиница </span>
+            <span class="card-name">Гостиница</span>
             <span class="card-price">От 1500 ₽ </span>
             <a class="button" href="#">Подробнее</a>
             <button class="button" type="submit">В избранное</button>
@@ -235,19 +237,15 @@
     <footer>
       <ul class="social-list">
         <li class="social-item">
-          <img src="images/logo-vk.svg">
-          <a class="icon" href="https://www.vk.com"><span class="visually-hidden">Вконтакте</span>
+          <a class="icon" href="#"><span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-item">
-          <img src="images/logo-telegram.svg">
-          <a class="icon" href="https://www.telegram.com"
-            ><span class="visually-hidden">Телеграм</span>
+          <a class="icon" href="#"><span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li>
-          <img src="images/logo-youtube.svg">
-          <a class="icon" href="https://www.youtube.com"><span class="visually-hidden">Ютуб</span></a>
+        <li class="social-item">
+          <a class="icon" href="#"><span class="visually-hidden">Ютуб</span></a>
         </li>
       </ul>
       <a class="number-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
