@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -44,7 +45,8 @@
     </header>
 
 
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-footer-container">
       <div class="background-image">
       <header class="header-inner">
         <h1 class="header-title">Гостиницы Седоны</h1>
@@ -112,12 +114,13 @@
         </fieldset>
         <button class="button button-accept" type="submit">Применить</button>
         <button class="button button-reset" type="reset">Сбросить</button>
-      </div>
-      </form>
+        </div>
+        </form>
 
 
 
-      <section class="found">
+      <section class="catalog">
+        <div class="found">
         <h2 class="found-title">Найдено страниц: 38</h2>
         <select class="select-control" aria-label="сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -133,6 +136,7 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать списком</span>
         </a>
+      </div>
 
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -216,11 +220,13 @@
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
+    </div>
     </main>
 
-    <footer>
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social-list">
+    <footer class="page-footer">
+      <div class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social-list footer-social">
         <li class="social-item">
           <a class="icon" href="https://htmlacademy.ru/">
             <img class="icon-image" src="images/logo-vk.svg" width="47" height="40" alt="vkontakte">
@@ -237,10 +243,16 @@
           </a>
         </li>
       </ul>
+    </div>
+      <div class="footer-phone">
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    </div>
+    <div class="footer-logo">
       <a class="htmlacademy-link" href="https://htmlacademy.ru">
         <img src="images/logo-htmlacademy.svg" width="115" height="39" alt="Логотип академии" />
       </a>
+    </div>
     </footer>
+  </div>
   </body>
 </html>

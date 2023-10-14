@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -26,10 +27,12 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img src="images/search.svg">
               <span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img src="images/heart.svg">
               <span class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation-item">
@@ -40,9 +43,10 @@
     </header>
       <section class="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону" />
+        <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону" />
       </section>
-      <main class="main-page">
+      <main class="main-container main-page">
+        <div class="page-container">
       <section class="advantages">
         <h2 class="pluses">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -123,10 +127,12 @@
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
+    </div>
     </main>
-    <footer>
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social-list">
+    <footer class="page-footer">
+      <div class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social-list footer-social">
         <li class="social-item">
           <a class="icon" href="https://htmlacademy.ru/">
             <img class="icon-image" src="images/logo-vk.svg" width="47" height="40" alt="vkontakte">
@@ -143,10 +149,16 @@
           </a>
         </li>
       </ul>
+    </div>
+      <div class="footer-phone">
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    </div>
+    <div class="footer-logo">
       <a class="htmlacademy-link" href="https://htmlacademy.ru">
         <img src="images/logo-htmlacademy.svg" width="115" height="39" alt="Логотип академии" />
       </a>
+    </div>
     </footer>
+  </div>
   </body>
 </html>
