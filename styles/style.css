@@ -28,12 +28,15 @@ body {
   line-height: 26px;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
 }
 
 .container{
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+  min-height: 100%;
 }
 
 .page-header {
@@ -92,7 +95,7 @@ body {
   margin: 0 auto;
 }
 
-.pluses {
+.caption {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -246,6 +249,10 @@ height: 385px;
   line-height: 78px;
 }
 
+.header-inner{
+  margin: 0 70px;
+}
+
 .breadcrumbs {
   text-align: left;
   font-size: 16px;
@@ -262,8 +269,8 @@ height: 385px;
 
 .catalog-filter{
   display: flex;
-  flex-wrap: wrap;
   margin: 0 70px;
+  justify-content: space-between;
 }
 
 .catalog-item{
