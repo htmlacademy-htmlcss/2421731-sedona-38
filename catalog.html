@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -37,14 +38,16 @@
             >
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button-push" href="#">Хочу сюда!</a>
+            <a class="button button-detailed" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div class="background_image">
-    <main class="main-inner">
+
+    <main class="main-container main-inner">
+      <div class="page-footer-container">
+      <div class="background-image">
       <header class="header-inner">
         <h1 class="header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -60,42 +63,24 @@
         </ul>
       </header>
 
-      <section class="catalog">
-        <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
+
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter">
           <legend class="catalog-filter-title">Инфраструктура</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="pool"
-                  checked
-                />Бассейн
+                <input class="control-input" type="checkbox" name="pool" checked>Бассейн
               </label>
             </li>
-          </ul>
-          <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="parking"
-                  checked
-                />Парковка
+                <input class="control-input" type="checkbox" name="parking" checked>Парковка
               </label>
             </li>
-          </ul>
-          <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="wi-fi"
-                />Wi-Fi
+                <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
               </label>
             </li>
           </ul>
@@ -127,13 +112,15 @@
           <label>от <input type="text" value="0" /></label>
           <label>до <input type="text" value="9000" /></label>
         </fieldset>
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="reset">Сбросить</button>
-      </form>
-    </div>
-      </section>
+        <button class="button button-accept" type="submit">Применить</button>
+        <button class="button button-reset" type="reset">Сбросить</button>
+        </div>
+        </form>
 
-      <section class="found">
+
+
+      <section class="catalog">
+        <div class="found">
         <h2 class="found-title">Найдено страниц: 38</h2>
         <select class="select-control" aria-label="сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -149,6 +136,7 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать списком</span>
         </a>
+      </div>
 
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -158,9 +146,9 @@
             </a>
             <span class="card-name">Гостиница</span>
             <span class="card-price">От 4000 ₽ </span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="submit">В избранное</button>
-            <img class="card-star" src="images/star.svg" alt="Рейтинг" />
+            <a class="button button-detailed" href="#">Подробнее</a>
+            <button class="button button-favourites" type="submit">В избранное</button>
+            <img class="card-star" src="images/stars-4.svg" alt="Рейтинг" />
             <p class="rating">Рейтинг: 8,5</p>
           </li>
           <li class="catalog-item">
@@ -170,9 +158,9 @@
             </a>
             <span class="card-name">Гостиница</span>
             <span class="card-price">От 5000 ₽ </span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="submit">В избранное</button>
-            <img class="card-star" src="images/star.svg" alt="Рейтинг" />
+            <a class="button button-detailed" href="#">Подробнее</a>
+            <button class="button button-selected" type="submit">В избранном</button>
+            <img class="card-star" src="images/stars-4.svg" alt="Рейтинг" />
             <p class="rating">Рейтинг: 9,2</p>
           </li>
           <li class="catalog-item">
@@ -182,9 +170,9 @@
             </a>
             <span class="card-name">Гостиница</span>
             <span class="card-price">От 2500 ₽ </span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="submit">В избранное</button>
-            <img class="card-star" src="images/star.svg" alt="Рейтинг" />
+            <a class="button button-detailed" href="#">Подробнее</a>
+            <button class="button button-favourites" type="submit">В избранное</button>
+            <img class="card-star" src="images/stars-3.svg" alt="Рейтинг" />
             <p class="rating">Рейтинг: 6,9</p>
           </li>
           <li class="catalog-item">
@@ -194,14 +182,14 @@
             </a>
             <span class="card-name">Гостиница</span>
             <span class="card-price">От 1500 ₽ </span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="submit">В избранное</button>
-            <img class="card-star" src="images/star.svg" alt="Рейтинг" />
+            <a class="button button-detailed" href="#">Подробнее</a>
+            <button class="button button-favourites" type="submit">В избранное</button>
+            <img class="card-star" src="images/stars-2.svg" alt="Рейтинг" />
             <p class="rating">Рейтинг: 5,0</p>
           </li>
         </ul>
         <ul class="pagination">
-          <li class="pagination-item">
+          <li class="pagination-item pagination-selected">
             <a class="pagination-link" href="#">1</a>
           </li>
           <li class="pagination-item">
@@ -213,7 +201,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item pagination-points">
             <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
@@ -223,8 +211,8 @@
       </section>
 
       <section class="subscription">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="text-basic">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -232,26 +220,39 @@
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
+    </div>
     </main>
 
-    <footer>
-      <ul class="social-list">
+    <footer class="page-footer">
+      <div class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social-list footer-social">
         <li class="social-item">
-          <a class="icon" href="#"><span class="visually-hidden">Вконтакте</span>
+          <a class="icon" href="https://htmlacademy.ru/">
+            <img class="icon-image" src="images/logo-vk.svg" width="47" height="40" alt="vkontakte">
           </a>
         </li>
         <li class="social-item">
-          <a class="icon" href="#"><span class="visually-hidden">Телеграм</span>
+          <a class="icon" href="https://htmlacademy.ru/">
+            <img class="icon-image" src="images/logo-youtube.svg" width="47" height="40" alt="youtube">
           </a>
         </li>
         <li class="social-item">
-          <a class="icon" href="#"><span class="visually-hidden">Ютуб</span></a>
+          <a class="icon" href="https://htmlacademy.ru/">
+            <img class="icon-image" src="images/logo-telegram.svg" width="47" height="40" alt="telegram">
+          </a>
         </li>
       </ul>
-      <a class="number-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    </div>
+      <div class="footer-phone">
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    </div>
+    <div class="footer-logo">
       <a class="htmlacademy-link" href="https://htmlacademy.ru">
         <img src="images/logo-htmlacademy.svg" width="115" height="39" alt="Логотип академии" />
       </a>
+    </div>
     </footer>
+  </div>
   </body>
 </html>
